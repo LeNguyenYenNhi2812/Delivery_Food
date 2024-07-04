@@ -1,0 +1,24 @@
+.food-display{
+    margin-top: 30px;
+}
+.food-display h2{
+    font-size: max(2vw,24px);
+   
+    font-weight: 600;
+}
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+    /*
+    The repeat() function allows you to repeat a set of columns (or rows) a specified number of times.
+    
+    The minmax() function allows you to specify the minimum and maximum size for a column (or row).
+
+    When using auto-fill, the grid will create as many columns as possible that fit within the container. 
+    This is dynamic and will adjust if the container size changes.
+    */
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
