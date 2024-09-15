@@ -6,6 +6,8 @@
   margin:0;
   box-sizing: border-box;
   font-family: Outfit;
+  scroll-behavior: smooth;
+  /* luot trang muot ma, tu tu hon*/
 }
 body{
   min-height: 100vh;
@@ -26,4 +28,28 @@ a{
     opacity: 1;
   }
   
+}
+@keyframes bgcolor {
+  0% {
+      background-color: #F9DDB1;
+  }
+
+  30% {
+      background-color: #F5C77E;
+  }
+
+  50% {
+      background-color: #F1B04C;
+  }
+
+  70% {
+      background-color: #EE9F27;
+  }
+
+  80% {
+      background-color: #E88504;
+  }
+  100% {
+      background-color: #DC6601;
+  }
 }
