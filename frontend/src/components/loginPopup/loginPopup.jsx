@@ -20,7 +20,7 @@ const loginPopup = ({setShowLogin}) => {
       </div>
       <div className="login-popup-condition">
         <input type="checkbox" id="conditionCheckbox" required/> 
-        <labe for="conditionCheckbox">By continuing, you agree with all privacy.</labe>
+        <labe for="conditionCheckbox"> By continuing, you agree with all privacy.</labe>
         
         <button className='login-button'>{loginState}</button>
         {loginState==="Sign up"?
