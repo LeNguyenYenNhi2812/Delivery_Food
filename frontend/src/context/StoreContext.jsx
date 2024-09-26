@@ -19,17 +19,23 @@ const addToCart=(itemId) => {
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
     }
 
-    useEffect(()=>{
-        console.log(cartItems);
-    
-    },[cartItems])
-
+    const getCartTotal=()=>{
+        let sum=0;
+        for( const item in cartItems){
+            if(cartItems[item]>0){
+            let chosenItem=food_list.find((food)=>food._id===item);
+            sum+=chosenItem.price*cartItems[item];
+        }
+    }
+    return sum;
+}
     const contextValue ={
    food_list,
    cartItems,
    setCartItems,
    addToCart,
-   removeFromCart
+   removeFromCart,
+   getCartTotal
     }
         return (
             <StoreContext.Provider value={contextValue}>
